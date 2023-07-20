@@ -7,8 +7,16 @@ nav{
     align-items: center;
 }
 
+nav ul a:hover{
+    background-color: rgb(198, 224, 247);
+    border-radius: 30px;
+    font-size: 20px;
+  }
+
+
 nav ul{
     display: flex;
+    
 
 }
 
