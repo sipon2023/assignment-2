@@ -1,0 +1,201 @@
+*{ 
+    pa
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav li{
+    list-style: none;
+    margin-right: 40px;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    text-align: right;
+}
+
+.banner .div-1{
+    background-color: rgb(252, 250, 250);
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    
+}
+.banner .div-1 .text{
+    margin: 0 auto;
+    margin-top: 20%;
+}
+
+.banner .div-2 img{
+    width: 80%;
+    height: auto;
+    margin-left: 1%;
+    box-align: right;
+
+}
+
+
+.section-2{
+    margin-top: 5%;
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+    
+}
+
+.section-2 .text-2{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+
+.section-2 .img-2{
+    width: 50%;
+    height: 90%;
+}
+
+.section-2 .img-2 img{
+    width: 150px;
+    height: 200px;
+    margin-top: 300px;
+    margin-right:110px;
+}
+
+
+/* section 3 styles*/
+
+.section-3{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.section-3 img{
+    height: auto;
+    width: 400px;
+}
+
+.section-3 .box{
+    height: auto;
+    width: 400px;
+}
+
+.section-3 .box button{
+    width:auto;
+    height: 50px;
+    border-radius: 20%;
+    border: none;   
+}
+
+/* grid styles*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid: auto rows 200px;
+    text-align: center;
+    margin-top: 30px;
+    column-gap: 10px;
+    row-gap: 1em;
+    margin-bottom: 10px;
+  }
+
+  .wrapper li{
+    list-style: none;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .wrapper li a{
+    text-decoration: none;
+  }
+
+  .wrapper img{
+    width: 25px;
+    align-items: center;
+  }
+
+  .wrapper li:hover{
+    background-color: rgb(198, 224, 247);
+    border-radius: 30px;
+    font-size: 30px;
+  }
+
+footer{
+    margin-bottom: 10%;
+    background-color: rgb(4, 3, 20);
+    text-align: center;
+    margin-top: 10%;
+    height: 4J00px;
+}
+
+
+footer ul{
+    display: flex;
+    gap: 5%;  
+}
+
+footer li{
+    color: white;
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+
+}
+/*social media icon*/
+
+
+/* responsiveness*/
+
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    .section-2{
+        flex-direction: column;
+       
+    }
+
+    .section-3{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    footer ul{
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    
+}
